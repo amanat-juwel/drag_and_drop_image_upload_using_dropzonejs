@@ -1,0 +1,154 @@
+/*-------------------------------------------------------------------------------------
+Theme Name  : VIPOS ADMIN PANEL
+Theme URI   : http://www.vipos.com
+Author URI  : http://v-linknetwork.com
+Description : VIPOS TEMPLATE CREATED BY V-LINK NETWORK. 
+Author      : V-LINK NETWORK | A LEADING SOFTWARE COMPANY IN CHITTAGONG, BANGLADESH. 
+Version     : 1.0
+----------------------------------------------------------------------------------------*/
+
+
+#category th,
+#brand th,
+#customer th,
+#category tr td:nth-child(1),
+#brand tr td:nth-child(1),
+#customer tr td:nth-child(1)
+{
+    text-align: center;
+}
+
+#category tr td:nth-child(1),
+#brand tr td:nth-child(1),
+#category tr td:nth-child(4),
+#brand tr td:nth-child(4)
+{
+    width:5%;
+}
+
+.edit
+{
+
+}
+
+.delete
+{
+    
+}
+
+td button
+{
+    border: none;
+    background-color: white;
+}
+
+#close
+{
+    width: 30%;
+    color: lightgreen;
+    background-color: gray;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px #a1a1d0;
+    color: #d4cccc;
+}
+
+.pay-button{
+    margin-top: 12px;
+    text-align: center;
+}
+.portlet.box.green>.portlet-title, .portlet.green, .portlet>.portlet-body.green
+{
+    background-color: #00a65a;
+}
+
+.invoice-bg
+{
+    position: absolute; 
+    left:0%;
+    opacity: 0.2;
+    z-index: 101;
+    top:35%;
+}
+
+.panel-danger {
+    border-color: #e65757;
+}
+
+.panel-danger>.panel-heading {
+    color: #ffffff;
+    background-color: #e65757;
+    border-color: #b55353;
+}
+.panel-success {
+    border-color: #70963d;
+}
+.panel-success>.panel-heading {
+    color: #ffffff;
+    background-color: #70963d;
+    border-color: #4b7b23;
+}
+
+.panel-warning {
+    border-color: #ea293b;
+}
+.panel-warning>.panel-heading {
+    color: #ffffff;
+    background-color: #ea293b;
+    border-color: #ea293b;
+}
+
+.amount{
+    text-align: right;
+    padding-right: 3px;
+}
+.qty-center{
+    text-align: center;
+}
+.bg-1{
+    background-color: lavender;
+}
+.bg-2{
+    background-color: lavenderblush;
+}
+.bg-3{
+    background-color: lavender;
+}
+.font-bold{
+    font-weight: bold;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .support{
+        color:white;font-weight: bold;font-size: 22px;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .support{
+        color:white;font-weight: bold;font-size: 22px;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .support{
+        color:white;font-weight: bold;font-size: 22px;
+    }
+}
+
+.required{
+    color: #e65757;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+/* Select2 class to show in moadl */
+/*
+.select2-container{
+        z-index: 99999;
+}
+
+*/
+

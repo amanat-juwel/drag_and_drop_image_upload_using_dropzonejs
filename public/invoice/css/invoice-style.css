@@ -1,0 +1,319 @@
+/*START INVOICE STYLE*/
+
+
+/*START FONTS*/
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*END FONTS*/
+.invoice-section
+{
+    color:#5B6165;
+}
+.invoice-section p ,
+.invoice-section li
+{
+    font-size:14px;
+    font-family: 'OpenSans-Regular' , sans-serif ;
+    color:#5B6165;
+    font-weight: normal;
+}
+.invoice-section ul ,
+.invoice-section ul li
+{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.invoice-wrapper {
+    box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.7);
+    /*background: #F7EDEB url(../images/bg.png) 0 0 no-repeat;*/
+    background-size: 100% auto;
+    min-height: 1150px;
+}
+/*START INVOICE HEADER*/
+.invoice-header {
+    height: 170px;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+.invoice-header ul li 
+{
+    margin:3px 0px;
+    display: block;
+}
+.invoice-header i 
+{
+    margin-right:10px;
+    color:#000;
+    font-size:15px;
+}
+.invoice-header .comapany-logo
+{
+    margin:50px;
+}
+.invoice-header  .company-profile
+{
+    margin-top:30px;
+}
+.invoice-header .company-profile h4 
+{
+    font-size:22px;
+    font-family: 'OpenSans-Bold' ;
+    color:#B32C39;
+    display:block;
+    text-transform: capitalize;
+}
+/*END INVOICE HEADER*/
+/*START INVOICE TITILE*/
+.invoice-title 
+{
+    margin:20px 50px;
+    position: relative;
+}
+.invoice-text
+{
+    position: relative;
+}
+.invoice-text::after
+{
+    border-left: 28px solid #2a374e;
+    border-bottom: 28px solid transparent;
+    border-top: 28px solid transparent;
+    content: "";
+    position: absolute;
+    right: -28px;
+
+}
+.invoice-title span 
+{
+    text-transform: uppercase;
+    text-align: center;
+    padding:0px 20px;
+    font-size: 40px;
+    background: #2a374e;
+    color: #fff;
+    font-family: 'OpenSans-Bold' , sans-serif ;
+}
+.invoice-title span.invoice-no
+{
+    background:transparent;
+    font-size:40px;
+    color:#5B6165;
+    margin-left:20px;
+    font-family: 'OpenSans-Bold' , sans-serif ;
+    position: unset;
+}
+/*END INVOICE TITILE*/
+/*START INVOICE CLIENT INFO*/
+.invoice-client-info
+{
+    margin:0px 50px;
+}
+.invoice-client-info ul li 
+{
+    margin:5px 0px;
+    display: block;
+}
+.invoice-client-info ul li:first-child 
+{
+    font-weight: bold;
+    font-size:16px;
+    text-transform: capitalize;
+}
+.invoice-client-info ul li:nth-child(2)
+{
+    font-family: 'OpenSans-Bold' , sans-serif ;
+    font-size:16px;
+    text-transform:capitalize;
+}
+.invoice-client-info ul li:nth-child(3) i 
+{
+    font-size:16px;
+}
+.invoice-client-info ul li i 
+{
+    padding-right: 10px;
+}
+/*END INVOICE CLIENT INFO*/
+/*START INVOICE ITEM*/
+.invoice-item
+{
+    margin:20px 50px 10px;
+}
+.invoice-item .table thead tr th 
+{
+    background: #2a374e;
+    color:#fff;
+    border-color:none;
+    border:0px;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: normal;
+    font-size:14px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+/*END INVOICE ITEM*/
+/*START INVOICE SUM*/
+.invoice-sum .table.sum tbody tr td
+{
+    color: #5B6165;
+    font-family: 'OpenSans-Bold', sans-serif ;
+    border:0px;
+    padding:5px;
+}
+.invoice-sum .table.sum tbody tr td h4 
+{
+    text-transform: uppercase;
+    font-family: 'OpenSans-Bold' ;
+    padding:0px;
+    margin:3px;
+}
+.invoice-sum .in-word
+{
+    margin-left:50px;
+}
+/*END INVOICE SUM*/
+/*START INVOICE BALANCE*/
+.invoice-balance 
+{
+    margin:20px 50px 0px 0px;
+}
+.invoice-balance .balance-danger
+{
+    background: #B32C39;
+    position: relative;
+    color: #fff !important;
+    margin:5px 0px;
+    font-size:18px;
+    font-family: 'OpenSans-Bold' ;
+    text-transform: uppercase;
+    padding:5px 0px;
+    display: block;
+}
+.invoice-balance .balance-danger::before
+{
+    content: '';
+    z-index: 101;
+    border-top: 35px solid transparent;
+    border-right: 35px solid #B32C39;
+    position: absolute;
+    left: -35px;
+    bottom:0px;
+}
+.invoice-balance  span
+{
+    margin:20px;
+}
+.invoice-balance .balance-success
+{
+    background: #4caf50;
+    position: relative;
+    color: #fff !important;
+    margin:5px 0px;
+    font-size:18px;
+    font-family: 'OpenSans-Bold' ;
+    text-transform: uppercase;
+    padding:5px 0px;
+    display: block;
+}
+.invoice-balance .balance-success::before
+{
+    content: '';
+    z-index: 101;
+    border-top: 35px solid transparent;
+    border-right: 35px solid #4caf50;
+    position: absolute;
+    left: -35px;
+    bottom:0px;
+}
+/*END INVOICE BALANCE*/
+/*START INVOICE NOTES*/
+.invoice-note 
+{
+    margin:15px 0px;
+}
+.invoice-note p
+{
+    color:red;
+    margin-left:50px;
+}
+.invoice-footer
+{
+    margin:50px 0px;
+}
+.msg-thanks
+{
+    font-size:40px;
+    font-family: 'OpenSans-Bold' ;
+    background:#2a374e;
+    padding:10px 20px;
+    text-transform: uppercase;
+    color:#fff;
+
+}
+/*END INVOICE NOTES*/
+/*START PRINT STYLE*/
+@media print {
+    @page {
+        size: auto;
+        margin: 0mm ;
+    }
+    html {
+        background: none !important;
+        border: none;
+        margin: 0;
+        padding: 0
+    }
+    body {
+        margin: 0 !important;
+        width: 820px !important;
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        -webkit-print-color-adjust: exact !important
+    }
+    .invoice-item .table thead tr th 
+    {
+        background: #2a374e !important;
+    }
+    .invoice-sum .table ,
+    .invoice-sum .table tr td
+    {
+        background:transparent !important;
+    }
+    .msg-thanks
+    {
+        position: relative;
+        right:-15px;
+    }
+    
+}
+/*END PRINT STYLE*/
+
+
+
+/*END INVOICE STYLE*/
