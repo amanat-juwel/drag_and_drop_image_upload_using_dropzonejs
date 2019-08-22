@@ -11,7 +11,8 @@
         "php": "^7.1.3",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -42,7 +43,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Amanatjuwel\\Contact\\": "pakage/contact/src/",
+            "Amanatjuwel\\DbDump\\": "pakage/db-dump/src/"
         }
     },
     "minimum-stability": "dev",

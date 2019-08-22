@@ -100,6 +100,7 @@ Version     : 1.0
                         </a>
                     </li>
                     <li><a href="{{ url('/item/create') }}"><i class="fa fa-mobile"></i> Add Items</a></li>
+                    <li><a href="{{ url('/database-backup') }}"><i class="fa fa-database"></i> Db Backup</a></li>
               </ul>
             </section>
         </aside>

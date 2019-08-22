@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Amanatjuwel\Contact\ContactServiceProvider::class,
+        Amanatjuwel\DbDump\DbDumpServiceProvider::class,
+
     ],
 
     /*
