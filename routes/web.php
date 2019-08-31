@@ -26,6 +26,14 @@
 
 Auth::routes();
 
+
+Route::get('events', 'EventController@index')->name('events.index');
+Route::post('events', 'EventController@store')->name('events.add');
+Route::post('events_ajax_update', 'EventController@ajaxUpdate');
+Route::post('events/delete', 'EventController@destroy');
+
+//Route::post('events/update', 'EventController@ajaxUpdate');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('admin')->group(function () {

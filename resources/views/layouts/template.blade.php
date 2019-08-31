@@ -15,7 +15,7 @@ Version     : 1.0
     <title> Admin Panel</title>
     <link rel="shortcut icon" type="image/png" href='' />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="_token" content="{!! csrf_token() !!}" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!-- {{ asset('public/assets/css/bootstrap.min.css') }} -->
     <link rel="stylesheet" href="{{ asset('public/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/css/font-awesome.min.css') }}">
@@ -99,6 +99,7 @@ Version     : 1.0
                             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         </a>
                     </li>
+                    <li><a href="{{ url('/events') }}"><i class="fa fa-mobile"></i> Events</a></li>
                     <li><a href="{{ url('/item/create') }}"><i class="fa fa-mobile"></i> Add Items</a></li>
                     <li><a href="{{ url('/database-backup') }}"><i class="fa fa-database"></i> Db Backup</a></li>
               </ul>
@@ -170,6 +171,16 @@ Version     : 1.0
                     $(".date-picker").blur();
                 }, 50);
             });  
+            $('#datepicker_time_1').datepicker({
+              
+              format: 'yyyy-mm-dd',
+              autoclose: 'true',
+            })
+            $('#datepicker_time_2').datepicker({
+              
+              format: 'yyyy-mm-dd',
+              autoclose: 'true',
+            })
 		</script>
         <!-- CK Editor -->
 <!--          <script>
